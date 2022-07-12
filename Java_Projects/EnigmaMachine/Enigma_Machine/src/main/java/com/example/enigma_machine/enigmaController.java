@@ -135,7 +135,7 @@ public class enigmaController extends enigmaMain {
 
     public void enterButton(ActionEvent actionEvent) {
         if(messBoxID.getText().isBlank()) {
-            encryptMessageBox.setText("");
+            encryptMessageBox.setText("testing");
         }
         else {
             if(encryptID.selectedProperty().get()){
