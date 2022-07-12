@@ -5,6 +5,7 @@
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextArea?>
@@ -14,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 
 <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="721.0" style="-fx-background-color: 000000;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enigma_machine.enigmaController">
-    <Tab fx:id="encryptSetTab" text="Encryption Settings">
+    <Tab text="Encryption Settings">
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
             <Label layoutX="230.0" layoutY="14.0" text="Enigma Machine">
                 <font>
@@ -114,7 +115,7 @@
                <Font name="Centaur" size="14.0" />
             </font>
          </Label>
-         <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="220.0" layoutY="428.0" prefHeight="27.0" prefWidth="438.0" text="3) Click Enter to show either the encoded message or decoded message." wrapText="true">
+         <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="220.0" layoutY="455.0" prefHeight="27.0" prefWidth="438.0" text="4) Click Enter to show either the encoded message or decoded message." wrapText="true">
             <font>
                <Font name="Centaur" size="14.0" />
             </font>
@@ -122,13 +123,22 @@
             <ImageView fitHeight="171.0" fitWidth="198.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                 <Image url="@images/enigmaImage.png" />
             </ImageView>
+         <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="220.0" layoutY="428.0" prefHeight="27.0" prefWidth="438.0" text="3) In the message tab, on the bottom select encrypt or decrypt" wrapText="true">
+            <font>
+               <Font name="Centaur" size="14.0" />
+            </font>
+         </Label>
         </AnchorPane>
     </Tab>
-    <Tab fx:id="messTab" text="Message">
+    <Tab text="Message">
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #000000;">
             <TextArea fx:id="messBoxID" layoutX="13.0" layoutY="14.0" prefHeight="225.0" prefWidth="695.0" promptText="Enter message:" />
-            <TextArea fx:id="encryptMessageBox" editable="false" layoutX="13.0" layoutY="259.0" prefHeight="200.0" prefWidth="695.0" style="-fx-background-color: #000000;" />
-            <Button fx:id="enterID" layoutX="321.0" layoutY="473.0" mnemonicParsing="false" onAction="#enterButton" prefHeight="31.0" prefWidth="80.0" text="Enter" />
+            <TextArea fx:id="encryptMessageBox" editable="false" layoutX="13.0" layoutY="255.0" prefHeight="229.0" prefWidth="695.0" style="-fx-background-color: #000000;" />
+            <Button fx:id="enterID" layoutX="321.0" layoutY="489.0" mnemonicParsing="false" onAction="#enterButton" prefHeight="25.0" prefWidth="80.0" text="Enter" />
+         <ScrollBar layoutX="693.0" layoutY="14.0" orientation="VERTICAL" prefHeight="224.0" prefWidth="14.0" />
+         <ScrollBar layoutX="693.0" layoutY="259.0" orientation="VERTICAL" prefHeight="224.0" prefWidth="14.0" />
+         <RadioButton fx:id="encryptID" layoutX="14.0" layoutY="493.0" mnemonicParsing="false" onAction="#radioEncrypt" text="Encrypt" textFill="WHITE" />
+         <RadioButton fx:id="decryptID" layoutX="103.0" layoutY="493.0" mnemonicParsing="false" onAction="#radioDecrypt" text="Decrypt" textFill="WHITE" />
         </AnchorPane>
     </Tab>
 </TabPane>
