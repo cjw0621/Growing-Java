@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0"
+            prefWidth="770.0" style="-fx-background-color: #243259;" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.royalhotel.guestregistration.GuestRegistrationMainController">
+    <TabPane prefHeight="811.0" prefWidth="770.0" style="-fx-border-color: #CAAF5B;" tabClosingPolicy="UNAVAILABLE">
+        <Tab text="Guest Registration">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="811.0" prefWidth="770.0"/>
+        </Tab>
+        <Tab text="Shell">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="811.0" prefWidth="770.0">
+                <TextArea fx:id="shellText" prefHeight="811.0" prefWidth="770.0"
+                          promptText="Enter command ::" style="-fx-border-color: #000000;"/>
+            </AnchorPane>
+        </Tab>
+    </TabPane>
+</AnchorPane>

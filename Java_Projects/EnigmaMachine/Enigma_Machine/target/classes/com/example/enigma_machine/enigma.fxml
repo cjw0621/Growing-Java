@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="721.0" style="-fx-background-color: 000000;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enigma_machine.enigmaController">
+    <Tab fx:id="encryptSetTab" text="Encryption Settings">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+            <Label layoutX="230.0" layoutY="14.0" text="Enigma Machine">
+                <font>
+                    <Font name="Century" size="33.0" />
+                </font>
+            </Label>
+            <MenuButton fx:id="digit1ID" layoutX="220.0" layoutY="157.0" mnemonicParsing="false" onAction="#digit1" prefHeight="25.0" prefWidth="43.0" text="0">
+                <items>
+                    <MenuItem fx:id="code01T" mnemonicParsing="false" onAction="#code01" text="0" />
+                    <MenuItem fx:id="code11T" mnemonicParsing="false" onAction="#code11" text="1" />
+                    <MenuItem fx:id="code21T" mnemonicParsing="false" onAction="#code21" text="2" />
+                    <MenuItem fx:id="code31T" mnemonicParsing="false" onAction="#code31" text="3" />
+                    <MenuItem fx:id="code41T" mnemonicParsing="false" onAction="#code41" text="4" />
+                    <MenuItem fx:id="code51T" mnemonicParsing="false" onAction="#code51" text="5" />
+                    <MenuItem fx:id="code61T" mnemonicParsing="false" onAction="#code61" text="6" />
+                    <MenuItem fx:id="code71T" mnemonicParsing="false" onAction="#code71" text="7" />
+                    <MenuItem fx:id="code81T" mnemonicParsing="false" onAction="#code81" text="8" />
+                    <MenuItem fx:id="code91T" mnemonicParsing="false" onAction="#code91" text="9" />
+                </items>
+            </MenuButton>
+            <MenuButton fx:id="digit2ID" layoutX="282.0" layoutY="157.0" mnemonicParsing="false" onAction="#digit2" prefHeight="25.0" prefWidth="43.0" text="0">
+                <items>
+                    <MenuItem fx:id="code02T" mnemonicParsing="false" onAction="#code02" text="0" />
+                    <MenuItem fx:id="code12T" mnemonicParsing="false" onAction="#code12" text="1" />
+                    <MenuItem fx:id="code22T" mnemonicParsing="false" onAction="#code22" text="2" />
+                    <MenuItem fx:id="code32T" mnemonicParsing="false" onAction="#code32" text="3" />
+                    <MenuItem fx:id="code42T" mnemonicParsing="false" onAction="#code42" text="4" />
+                    <MenuItem fx:id="code52T" mnemonicParsing="false" onAction="#code52" text="5" />
+                    <MenuItem fx:id="code62T" mnemonicParsing="false" onAction="#code62" text="6" />
+                    <MenuItem fx:id="code72T" mnemonicParsing="false" onAction="#code72" text="7" />
+                    <MenuItem fx:id="code82T" mnemonicParsing="false" onAction="#code82" text="8" />
+                    <MenuItem fx:id="code92T" mnemonicParsing="false" onAction="#code92" text="9" />
+                </items>
+            </MenuButton>
+            <MenuButton fx:id="digit3ID" layoutX="339.0" layoutY="157.0" mnemonicParsing="false" onAction="#digit3" prefHeight="25.0" prefWidth="43.0" text="0">
+                <items>
+                    <MenuItem fx:id="code03T" mnemonicParsing="false" onAction="#code03" text="0" />
+                    <MenuItem fx:id="code13T" mnemonicParsing="false" onAction="#code13" text="1" />
+                    <MenuItem fx:id="code23T" mnemonicParsing="false" onAction="#code23" text="2" />
+                    <MenuItem fx:id="code33T" mnemonicParsing="false" onAction="#code33" text="3" />
+                    <MenuItem fx:id="code43T" mnemonicParsing="false" onAction="#code43" text="4" />
+                    <MenuItem fx:id="code53T" mnemonicParsing="false" onAction="#code53" text="5" />
+                    <MenuItem fx:id="code63T" mnemonicParsing="false" onAction="#code63" text="6" />
+                    <MenuItem fx:id="code73T" mnemonicParsing="false" onAction="#code73" text="7" />
+                    <MenuItem fx:id="code83T" mnemonicParsing="false" onAction="#code83" text="8" />
+                    <MenuItem fx:id="code93T" mnemonicParsing="false" onAction="#code93" text="9" />
+                </items>
+            </MenuButton>
+            <MenuButton fx:id="digit4ID" layoutX="398.0" layoutY="157.0" mnemonicParsing="false" onAction="#digit4" prefHeight="25.0" prefWidth="43.0" text="0">
+                <items>
+                    <MenuItem fx:id="code04T" mnemonicParsing="false" onAction="#code04" text="0" />
+                    <MenuItem fx:id="code14T" mnemonicParsing="false" onAction="#code14" text="1" />
+                    <MenuItem fx:id="code24T" mnemonicParsing="false" onAction="#code24" text="2" />
+                    <MenuItem fx:id="code34T" mnemonicParsing="false" onAction="#code34" text="3" />
+                    <MenuItem fx:id="code44T" mnemonicParsing="false" onAction="#code44" text="4" />
+                    <MenuItem fx:id="code54T" mnemonicParsing="false" onAction="#code54" text="5" />
+                    <MenuItem fx:id="code64T" mnemonicParsing="false" onAction="#code64" text="6" />
+                    <MenuItem fx:id="code74T" mnemonicParsing="false" onAction="#code74" text="7" />
+                    <MenuItem fx:id="code84T" mnemonicParsing="false" onAction="#code84" text="8" />
+                    <MenuItem fx:id="code94T" mnemonicParsing="false" onAction="#code94" text="9" />
+                </items>
+            </MenuButton>
+            <MenuButton fx:id="digit5ID" layoutX="458.0" layoutY="157.0" mnemonicParsing="false" onAction="#digit5" prefHeight="25.0" prefWidth="43.0" text="0">
+                <items>
+                    <MenuItem fx:id="code05T" mnemonicParsing="false" onAction="#code05" text="0" />
+                    <MenuItem fx:id="code15T" mnemonicParsing="false" onAction="#code15" text="1" />
+                    <MenuItem fx:id="code25T" mnemonicParsing="false" onAction="#code25" text="2" />
+                    <MenuItem fx:id="code35T" mnemonicParsing="false" onAction="#code35" text="3" />
+                    <MenuItem fx:id="code45T" mnemonicParsing="false" onAction="#code45" text="4" />
+                    <MenuItem fx:id="code55T" mnemonicParsing="false" onAction="#code55" text="5" />
+                    <MenuItem fx:id="code65T" mnemonicParsing="false" onAction="#code65" text="6" />
+                    <MenuItem fx:id="code75T" mnemonicParsing="false" onAction="#code75" text="7" />
+                    <MenuItem fx:id="code85T" mnemonicParsing="false" onAction="#code85" text="8" />
+                    <MenuItem fx:id="code95T" mnemonicParsing="false" onAction="#code95" text="9" />
+                </items>
+            </MenuButton>
+            <Label layoutX="303.0" layoutY="110.0" text="Enter code:">
+                <font>
+                    <Font name="Century" size="22.0" />
+                </font>
+            </Label>
+            <RadioButton fx:id="radioAID" layoutX="227.0" layoutY="259.0" mnemonicParsing="false" onAction="#radioA" text="A" />
+            <RadioButton fx:id="radioBID" layoutX="347.0" layoutY="259.0" mnemonicParsing="false" onAction="#radioB" text="B" />
+            <RadioButton fx:id="radioCID" layoutX="465.0" layoutY="259.0" mnemonicParsing="false" onAction="#radioC" text="C" />
+         <Label layoutX="220.0" layoutY="345.0" text="Instructions:" underline="true">
+            <font>
+               <Font name="Centaur" size="16.0" />
+            </font>
+         </Label>
+         <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="220.0" layoutY="374.0" prefHeight="27.0" prefWidth="86.0" text="1) Enter code." wrapText="true">
+            <font>
+               <Font name="Centaur" size="14.0" />
+            </font>
+         </Label>
+         <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="220.0" layoutY="401.0" prefHeight="27.0" prefWidth="394.0" text="2) Click on the message tab and enter a message on the top box." wrapText="true">
+            <font>
+               <Font name="Centaur" size="14.0" />
+            </font>
+         </Label>
+         <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="220.0" layoutY="428.0" prefHeight="27.0" prefWidth="438.0" text="3) Click Enter to show either the encoded message or decoded message." wrapText="true">
+            <font>
+               <Font name="Centaur" size="14.0" />
+            </font>
+         </Label>
+            <ImageView fitHeight="171.0" fitWidth="198.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/enigmaImage.png" />
+            </ImageView>
+        </AnchorPane>
+    </Tab>
+    <Tab fx:id="messTab" text="Message">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #000000;">
+            <TextArea fx:id="messBoxID" layoutX="13.0" layoutY="14.0" prefHeight="225.0" prefWidth="695.0" promptText="Enter message:" />
+            <TextArea fx:id="encryptMessageBox" editable="false" layoutX="13.0" layoutY="259.0" prefHeight="200.0" prefWidth="695.0" style="-fx-background-color: #000000;" />
+            <Button fx:id="enterID" layoutX="321.0" layoutY="473.0" mnemonicParsing="false" onAction="#enterButton" prefHeight="31.0" prefWidth="80.0" text="Enter" />
+        </AnchorPane>
+    </Tab>
+</TabPane>

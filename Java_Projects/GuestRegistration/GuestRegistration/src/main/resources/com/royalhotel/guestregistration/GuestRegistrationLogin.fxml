@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="700.0" style="-fx-background-color: #243259;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.royalhotel.guestregistration.GuestRegistrationController">
+   <ImageView fitHeight="244.0" fitWidth="240.0" layoutX="230.0" layoutY="-38.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../samples/RoyalHotelTitle.png" />
+   </ImageView>
+   <ImageView fitHeight="39.0" fitWidth="58.0" layoutX="628.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../samples/JavaFxLogo.png" />
+   </ImageView>
+   <ImageView fitHeight="63.0" fitWidth="77.0" layoutX="14.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../samples/EcoHotelLogo.png" />
+   </ImageView>
+   <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="230.0" layoutY="225.0" prefHeight="39.0" prefWidth="240.0" promptText="Username">
+      <font>
+         <Font name="Tahoma" size="19.0" />
+      </font>
+   </TextField>
+   <PasswordField fx:id="passwordPasswordField" alignment="CENTER" layoutX="230.0" layoutY="303.0" prefHeight="39.0" prefWidth="240.0" promptText="Password">
+      <font>
+         <Font name="Tahoma" size="19.0" />
+      </font>
+   </PasswordField>
+   <Button fx:id="signInButton" layoutX="230.0" layoutY="396.0" mnemonicParsing="false" onAction="#onSignInButtonClick" prefHeight="13.0" prefWidth="240.0" style="-fx-background-color: #CAAF5B;" text="Sign in">
+      <font>
+         <Font name="Cambria" size="14.0" />
+      </font>
+      <effect>
+         <Bloom threshold="0.91" />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Label layoutX="39.0" layoutY="487.0" text="Eco" textFill="WHITE" />
+   <Label layoutX="85.0" layoutY="524.0" rotate="90.0" text="Hotel" textFill="WHITE" />
+   <Label layoutX="574.0" layoutY="549.0" text="Powered by:" textFill="WHITE">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Label>
+   <Label layoutX="229.0" layoutY="202.0" text="Username:" textFill="WHITE">
+      <font>
+         <Font name="Cambria" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="230.0" layoutY="281.0" text="Password:" textFill="WHITE">
+      <font>
+         <Font name="Cambria" size="18.0" />
+      </font>
+   </Label>
+   <Separator layoutX="113.0" layoutY="469.0" prefHeight="6.0" prefWidth="436.0" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="113.0" />
+   <Label layoutX="296.0" layoutY="486.0" text="Not yet a user?" textFill="#fcfcfc">
+      <font>
+         <Font name="Cambria" size="17.0" />
+      </font>
+   </Label>
+   <Button fx:id="signUpButton" layoutX="322.0" layoutY="520.0" mnemonicParsing="false" onAction="#onSignUpButtonClick" style="-fx-background-color: #CAAF5B;" text="Sign up">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+   <Label fx:id="incorrectText" layoutX="266.0" layoutY="366.0" textFill="#ff1a1a" />
+   <Label fx:id="forgetUserandPassText" layoutX="252.0" layoutY="349.0" textFill="WHITE" />
+   <Label fx:id="clickLinkText" layoutX="312.0" layoutY="366.0" textFill="WHITE" />
+   <Hyperlink fx:id="forgotUser" layoutX="242.0" layoutY="434.0" onAction="#onForgotUserClick" prefHeight="27.0" prefWidth="108.0" text="Forgot username?">
+      <font>
+         <Font name="Cambria" size="12.0" />
+      </font>
+   </Hyperlink>
+   <Hyperlink fx:id="forgotPass" layoutX="354.0" layoutY="437.0" onAction="#onForgotPassClick" text="Forgot password?">
+      <font>
+         <Font name="Cambria" size="12.0" />
+      </font>
+   </Hyperlink>
+</AnchorPane>

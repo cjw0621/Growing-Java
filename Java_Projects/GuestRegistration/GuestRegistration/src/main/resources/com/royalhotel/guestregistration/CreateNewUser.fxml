@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="700.0" style="-fx-background-color: #243259;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.royalhotel.guestregistration.CreateNewUserController">
+   <ImageView fitHeight="359.0" fitWidth="239.0" layoutX="231.0" layoutY="-39.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="231.0">
+      <Image url="@../../../samples/RoyalHotelTitle.png" />
+   </ImageView>
+   <TextField fx:id="createUsernameField" alignment="CENTER" layoutX="214.0" layoutY="200.0" prefHeight="31.0" prefWidth="298.0" promptText="Create Username" AnchorPane.bottomAnchor="345.0" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="203.0" />
+   <PasswordField fx:id="createPasswordField" alignment="CENTER" layoutX="203.0" layoutY="257.0" prefHeight="31.0" prefWidth="298.0" promptText="Create Password" AnchorPane.bottomAnchor="288.0" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="203.0" />
+   <PasswordField fx:id="verifyPasswordField" alignment="CENTER" layoutX="203.0" layoutY="317.0" prefHeight="31.0" prefWidth="298.0" promptText="Create Password" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="203.0" />
+   <Button fx:id="createUserButton" layoutX="242.0" layoutY="456.0" mnemonicParsing="false" onAction="#onCreateUserButton" prefHeight="23.0" prefWidth="239.0" style="-fx-background-color: #CAAF5B;" text="Create User" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="242.0" AnchorPane.rightAnchor="240.0" />
+   <Button fx:id="backButton" layoutX="317.0" layoutY="497.0" mnemonicParsing="false" onAction="#onBackButton" prefHeight="17.0" prefWidth="87.0" text="Back" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="317.0" AnchorPane.rightAnchor="317.0" />
+   <Label fx:id="successLabel" layoutX="308.0" layoutY="423.0" prefHeight="17.0" prefWidth="84.0" textFill="WHITE" />
+   <Label fx:id="errorLabel" layoutX="241.0" layoutY="423.0" prefHeight="17.0" prefWidth="218.0" textFill="#ee0000" />
+   <Label layoutX="203.0" layoutY="301.0" text="Verify password:" textFill="WHITE" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="203.0">
+      <font>
+         <Font name="Cambria" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="214.0" layoutY="176.0" text="Create username:" textFill="WHITE" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="203.0" />
+   <Label layoutX="203.0" layoutY="240.0" text="Create password:" textFill="WHITE" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="203.0" />
+   <Label fx:id="passwordMatchText" layoutX="286.0" layoutY="423.0" textFill="WHITE" />
+   <TextField fx:id="emailTextField" alignment="CENTER" layoutX="203.0" layoutY="376.0" prefHeight="31.0" prefWidth="294.0" promptText="Enter email" />
+   <Label layoutX="203.0" layoutY="360.0" text="Enter your email:" textFill="WHITE">
+      <font>
+         <Font name="Cambria" size="12.0" />
+      </font>
+   </Label>
+</AnchorPane>
