@@ -4,10 +4,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-public class enigmaController {
+public class enigmaController extends enigmaMain {
 
     @FXML
+    private RadioButton encryptID;
+    @FXML
+    private RadioButton decryptID;
+    @FXML
     private Button enterID;
+    @FXML
+    private TextArea messBoxID;
+    @FXML
+    private TextArea encryptMessageBox;
     @FXML
     private MenuItem code01T;
     @FXML
@@ -115,12 +123,6 @@ public class enigmaController {
     @FXML
     private RadioButton radioCID;
     @FXML
-    private TextArea messBoxID;
-    @FXML
-    private TextArea encryptMessageBox;
-    @FXML
-    private Tab encryptSetTab;
-    @FXML
     private MenuButton digit1ID;
     @FXML
     private MenuButton digit2ID;
@@ -130,11 +132,18 @@ public class enigmaController {
     private MenuButton digit4ID;
     @FXML
     private MenuButton digit5ID;
-    @FXML
-    private Tab messTab;
 
     public void enterButton(ActionEvent actionEvent) {
-
+        if(messBoxID.getText().isBlank()) {
+            encryptMessageBox.setText("");
+        }
+        else {
+            if(encryptID.selectedProperty().get()){
+                encryptMessageBox.setText(enigmaMain.encryption(messBoxID.getText()));
+            } else if(decryptID.selectedProperty().get()){
+                encryptMessageBox.setText(enigmaMain.decryption(messBoxID.getText()));
+            }
+        }
 
     }
 
@@ -180,7 +189,17 @@ public class enigmaController {
         }
     }
 
+    public void radioEncrypt(ActionEvent actionEvent) {
+        if(encryptID.selectedProperty().get()){
+            decryptID.selectedProperty().set(false);
+        }
+    }
 
+    public void radioDecrypt(ActionEvent actionEvent) {
+        if(decryptID.selectedProperty().get()){
+            decryptID.selectedProperty().set(false);
+        }
+    }
 
     public void code01(ActionEvent actionEvent) {
         digit1ID.setText(code01T.getText());
@@ -422,6 +441,7 @@ public class enigmaController {
         digit5ID.setText(code95T.getText());
 
     }
+
 
 
 }

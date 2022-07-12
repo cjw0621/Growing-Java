@@ -1,6 +1,6 @@
 package com.example.enigma_machine;
 
-public class enigmaMain extends enigmaController {
+public class enigmaMain {
 
     public static String encryption(String m) {
 
