@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: #00008B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <PasswordField layoutX="217.0" layoutY="233.0" prefHeight="25.0" prefWidth="168.0" />
+            <Label layoutX="187.0" layoutY="211.0" text="Password" textFill="#f5f2f2">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="185.0" layoutY="135.0" text="Username" textFill="#f5f2f2">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <TextField layoutX="217.0" layoutY="160.0" prefHeight="25.0" prefWidth="168.0" />
+            <ImageView fitHeight="94.0" fitWidth="108.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Images/Vector_man_glitch_icon.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="213.0" layoutY="26.0" prefHeight="17.0" prefWidth="149.0" text="LOGIN" textAlignment="JUSTIFY" textFill="#f5eaea">
+               <font>
+                  <Font name="Arial Bold" size="38.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="188.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/User_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="188.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Password_icon%20(2).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="184.0" layoutY="77.0" prefHeight="17.0" prefWidth="207.0" text="Please enter username and password" textFill="#f2eeee">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="288.0" layoutY="258.0" text="Forgot Password?" underline="true" />
+            <Button layoutX="214.0" layoutY="313.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="149.0" text="Login" textFill="#29a2c2" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
