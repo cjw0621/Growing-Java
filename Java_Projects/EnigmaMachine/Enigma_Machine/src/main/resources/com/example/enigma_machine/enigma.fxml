@@ -138,7 +138,7 @@
          <ScrollBar layoutX="693.0" layoutY="14.0" orientation="VERTICAL" prefHeight="224.0" prefWidth="14.0" />
          <ScrollBar layoutX="693.0" layoutY="259.0" orientation="VERTICAL" prefHeight="224.0" prefWidth="14.0" />
          <RadioButton fx:id="encryptID" layoutX="14.0" layoutY="493.0" mnemonicParsing="false" onAction="#radioEncrypt" text="Encrypt" textFill="WHITE" />
-         <RadioButton fx:id="decryptID1" layoutX="109.0" layoutY="493.0" mnemonicParsing="false" onAction="#radioDecrypt" text="Decrypt" textFill="WHITE" />
+         <RadioButton fx:id="decryptID" layoutX="109.0" layoutY="493.0" mnemonicParsing="false" onAction="#radioDecrypt" text="Decrypt" textFill="WHITE" />
         </AnchorPane>
     </Tab>
 </TabPane>

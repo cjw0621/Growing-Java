@@ -4,18 +4,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-public class enigmaController extends enigmaMain {
+public class enigmaController {
 
     @FXML
-    private RadioButton encryptID;
+    public RadioButton encryptID;
     @FXML
-    private RadioButton decryptID;
+    public RadioButton decryptID;
     @FXML
     private Button enterID;
     @FXML
-    private TextArea messBoxID;
+    public TextArea messBoxID;
     @FXML
-    private TextArea encryptMessageBox;
+    public TextArea encryptMessageBox;
     @FXML
     private MenuItem code01T;
     @FXML
@@ -123,43 +123,46 @@ public class enigmaController extends enigmaMain {
     @FXML
     private RadioButton radioCID;
     @FXML
-    private MenuButton digit1ID;
+    public  MenuButton digit1ID;
     @FXML
-    private MenuButton digit2ID;
+    public  MenuButton digit2ID;
     @FXML
-    private MenuButton digit3ID;
+    public  MenuButton digit3ID;
     @FXML
-    private MenuButton digit4ID;
+    public  MenuButton digit4ID;
     @FXML
-    private MenuButton digit5ID;
+    public  MenuButton digit5ID;
 
     public void enterButton(ActionEvent actionEvent) {
-        if(messBoxID.getText().isBlank()) {
-            encryptMessageBox.setText("testing");
-        }
-        else {
-            if(encryptID.selectedProperty().get()){
-                encryptMessageBox.setText(enigmaMain.encryption(messBoxID.getText()));
-            } else if(decryptID.selectedProperty().get()){
-                encryptMessageBox.setText(enigmaMain.decryption(messBoxID.getText()));
-            }
+        enigmaMain em = new enigmaMain();
+
+        if(decryptID.selectedProperty().get()){
+            this.encryptMessageBox.setText(em.decryption(this.messBoxID, this.encryptMessageBox));
+        } else if(encryptID.selectedProperty().get()) {
+            this.encryptMessageBox.setText(em.encryption(this.messBoxID, this.encryptMessageBox));
+
         }
 
     }
 
-    public void digit1(ActionEvent actionEvent) {
+    public String digit1(ActionEvent actionEvent) {
+        return this.digit1ID.getText();
     }
 
     public void digit2(ActionEvent actionEvent) {
+
     }
 
     public void digit3(ActionEvent actionEvent) {
+
     }
 
     public void digit4(ActionEvent actionEvent) {
+
     }
 
     public void digit5(ActionEvent actionEvent) {
+
     }
 
     public void radioA(ActionEvent actionEvent) {
@@ -197,11 +200,11 @@ public class enigmaController extends enigmaMain {
 
     public void radioDecrypt(ActionEvent actionEvent) {
         if(decryptID.selectedProperty().get()){
-            decryptID.selectedProperty().set(false);
+            encryptID.selectedProperty().set(false);
         }
     }
 
-    public void code01(ActionEvent actionEvent) {
+    public void code01() {
         digit1ID.setText(code01T.getText());
     }
 
