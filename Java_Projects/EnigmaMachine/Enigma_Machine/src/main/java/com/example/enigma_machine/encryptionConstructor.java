@@ -1,6 +1,6 @@
 package com.example.enigma_machine;
 
-public class encryptionConstructor extends enigmaController {
+public class encryptionConstructor {
     
 
 }

@@ -17,6 +17,7 @@ public class ReadingUserInputChallenge {
 
         int sumOfNum = 0;
         int counter = 0;
+
         while(true) {
             System.out.println("Enter number #" + (counter + 1) +":");
             Scanner sc = new Scanner(System.in);
@@ -27,12 +28,11 @@ public class ReadingUserInputChallenge {
                 sumOfNum += x;
                 counter += 1;
                 if (counter == 10) {
-                    System.out.println(sumOfNum);
+                    System.out.println("sum = " + sumOfNum);
                     sc.close();
                     break;
                 }
             }
         }
-
     }
 }

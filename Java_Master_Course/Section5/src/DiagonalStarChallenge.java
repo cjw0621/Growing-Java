@@ -2,7 +2,7 @@ public class DiagonalStarChallenge {
 
     public static void main(String[] args) {
 
-        printSquareStar(8);
+        printSquareStar(50);
     }
     public static void printSquareStar(int number){
         if(number < 5) System.out.println("Invalid Value");
