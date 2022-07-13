@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ReadingUserInputChallenge {
 // Read 10 numbers form the console entered by the user and print the sume of those numbers.
 // Create a Scanner like we did in the previous video.
@@ -13,6 +15,24 @@ public class ReadingUserInputChallenge {
     // Create a project with the name ReadingUserInputChallenge.
     public static void main(String[] args) {
 
+        int sumOfNum = 0;
+        int counter = 0;
+        while(true) {
+            System.out.println("Enter number #" + (counter + 1) +":");
+            Scanner sc = new Scanner(System.in);
+            if(!sc.hasNextInt()) {
+                System.out.println("Invalid Number");
+            } else {
+                int x = sc.nextInt();
+                sumOfNum += x;
+                counter += 1;
+                if (counter == 10) {
+                    System.out.println(sumOfNum);
+                    sc.close();
+                    break;
+                }
+            }
+        }
 
     }
 }
