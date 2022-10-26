@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="700.0" style="-fx-background-color: #243259;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.royalhotel.guestregistration.SecurityQuestionController">
+   <MenuButton fx:id="secQues1Id" accessibleRole="CHECK_MENU_ITEM" layoutX="159.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="382.0" text="Security Question 1" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="159.0">
+      <items>
+         <MenuItem fx:id="menuItem11" onAction="#onMenuItem11Click" text="First pets name" />
+         <MenuItem fx:id="menuItem12" mnemonicParsing="false" onAction="#onMenuItem12Click" text="Name of city of birth." />
+         <MenuItem fx:id="menuItem13" mnemonicParsing="false" onAction="#onMenuItem13Click" text="Favorite tv show" />
+      </items>
+   </MenuButton>
+   <TextField fx:id="secQuest1TextBox" layoutX="187.0" layoutY="170.0" prefHeight="25.0" prefWidth="325.0" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="159.0" />
+   <MenuButton fx:id="secQues2Id" accessibleRole="CHECK_MENU_ITEM" layoutX="159.0" layoutY="235.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="382.0" text="Security Question 2" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="159.0">
+      <items>
+         <MenuItem fx:id="menuItem21" onAction="#onMenuItem21Click" text="Favorite Movie" />
+         <MenuItem fx:id="menuItem22" mnemonicParsing="false" onAction="#onMenuItem22Click" text="Favorite Color" />
+         <MenuItem fx:id="menuItem23" mnemonicParsing="false" onAction="#onMenuItem23Click" text="Fathers middle name" />
+      </items>
+   </MenuButton>
+   <TextField fx:id="secQuest2TextBox" layoutX="188.0" layoutY="287.0" prefHeight="25.0" prefWidth="325.0" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="159.0" />
+   <MenuButton fx:id="secQues3Id" accessibleRole="CHECK_MENU_ITEM" layoutX="159.0" layoutY="348.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="382.0" text="Security Question 3" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="159.0">
+      <items>
+         <MenuItem fx:id="menuItem31" onAction="#onMenuItem31Click" text="Favorite soda" />
+         <MenuItem fx:id="menuItem32" mnemonicParsing="false" onAction="#onMenuItem32Click" text="First car's make and model" />
+         <MenuItem fx:id="menuItem33" mnemonicParsing="false" onAction="#onMenuItem33Click" text="Favorite food" />
+      </items>
+   </MenuButton>
+   <TextField fx:id="secQuest3TextBox" layoutX="188.0" layoutY="400.0" prefHeight="25.0" prefWidth="325.0" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="159.0" />
+   <ImageView fitHeight="132.0" fitWidth="134.0" layoutX="-8.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../samples/RoyalHotelTitle.png" />
+   </ImageView>
+   <Button fx:id="acceptButton" layoutX="275.0" layoutY="498.0" mnemonicParsing="false" onAction="#onAcceptButtonClick" prefHeight="25.0" prefWidth="151.0" text="Accept" />
+   <Separator layoutX="136.0" layoutY="207.0" prefHeight="19.0" prefWidth="430.0" style="-fx-background-color: #243259;" AnchorPane.leftAnchor="134.0" AnchorPane.rightAnchor="134.0" />
+   <Separator layoutX="147.0" layoutY="320.0" prefHeight="19.0" prefWidth="430.0" style="-fx-background-color: #243259;" AnchorPane.leftAnchor="134.0" AnchorPane.rightAnchor="134.0" />
+   <Separator layoutX="556.0" layoutY="94.0" orientation="VERTICAL" prefHeight="365.0" prefWidth="25.0" />
+   <Separator layoutX="122.0" layoutY="94.0" orientation="VERTICAL" prefHeight="365.0" prefWidth="25.0" />
+   <Separator layoutX="136.0" layoutY="85.0" prefHeight="19.0" prefWidth="430.0" style="-fx-background-color: #243259;" />
+   <Separator layoutX="136.0" layoutY="450.0" prefHeight="19.0" prefWidth="430.0" style="-fx-background-color: #243259;" />
+   <Label layoutX="175.0" layoutY="39.0" text="Please create 3 security questions:" textFill="WHITE">
+      <font>
+         <Font name="Cambria" size="24.0" />
+      </font>
+   </Label>
+   <Label fx:id="errorLabel" layoutX="246.0" layoutY="469.0" textFill="#ee1c1c">
+      <font>
+         <Font name="Cambria" size="12.0" />
+      </font>
+   </Label>
+</AnchorPane>
