@@ -7,7 +7,21 @@ public class ChaseBank {
     private String email;
     private String phoneNumber;
 
-    public void setCustomerName(String firstName, String lastName){
+    public ChaseBank(){
+        this("Default firstName,", "Default LastName", 000_000_000,
+                2,"No email", "000-000-0000" );
+        System.out.println("Empty constructor called");
+    }
+    public ChaseBank(String firstName, String lastName, int accountNumber, int balance, String email, String phoneNumber){
+        setCustomerName(firstName, lastName);
+        setAccountNumber(accountNumber);
+        setBalance(balance);
+        setEmail(email);
+        setPhoneNumber(phoneNumber);
+        System.out.println("Account constructor with parameters called");
+    }
+
+    private void setCustomerName(String firstName, String lastName){
         this.customerName = firstName + " " + lastName;
     }
 
@@ -18,7 +32,7 @@ public class ChaseBank {
         return this.customerName;
     }
 
-    public void setAccountNumber(int accountNumber){
+    private void setAccountNumber(int accountNumber){
         this.accountNumber = accountNumber;
     }
 
@@ -26,7 +40,7 @@ public class ChaseBank {
         return this.accountNumber;
     }
 
-    public void setBalance(int balance){
+    private void setBalance(int balance){
         this.balance = balance;
     }
 
@@ -34,7 +48,7 @@ public class ChaseBank {
         return this.balance;
     }
 
-    public void setEmail(String email){
+    private void setEmail(String email){
         this.email = email;
     }
 
@@ -42,7 +56,7 @@ public class ChaseBank {
         return this.email;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    private void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
@@ -68,7 +82,10 @@ public class ChaseBank {
 
     public static void main(String[] args) {
         Scanner user = new Scanner(System.in);
+
         ChaseBank bank = new ChaseBank();
+//        ChaseBank bank = new ChaseBank("Chase", "Whitney", 556_221_867, 0,
+//                "cjwhitney2892@gmail.com", "360-250-4332");
 
         System.out.println("Welcome to Chase Bank");
 
