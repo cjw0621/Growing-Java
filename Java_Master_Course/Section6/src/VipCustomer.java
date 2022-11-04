@@ -1,8 +1,8 @@
 public class VipCustomer {
 
-    private String name;
-    private int creditLimit;
-    private String email;
+    private final String name;
+    private final int creditLimit;
+    private final String email;
 
 
 
